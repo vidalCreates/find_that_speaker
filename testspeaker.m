@@ -5,7 +5,6 @@ function resultname = testspeaker
     resultname = "Emma";
     disp ("Emma : " + max);
   end
-
   if (checkKevin < max)
     max = checkKevin;
     resultname = "Kevin";
