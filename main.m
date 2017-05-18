@@ -41,7 +41,7 @@ function [x] = main(filename)
      x = testspeaker;
      disp (x);
 
-% connect to DB
+%   %connect to DB
 %     javaaddpath('/Users/BrittneySamuels/Downloads/mysql-connector-java-5.1.42/mysql-connector-java-5.1.42-bin.jar')
 %     conn = database('find_that_speaker_DB','root','password','com.mysql.jdbc.Driver','jdbc:mysql://localhost/find_that_speaker_DB')
 

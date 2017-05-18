@@ -110,4 +110,4 @@ disp(strcat('filename - ',speechfile));
 x = main(speechfile);
 
 %set result in GUI
-set(handles.match_result,'String',x);
+set(handles.match_result,'String','Speaker : --' + x + '--');

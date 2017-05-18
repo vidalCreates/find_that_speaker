@@ -93,4 +93,4 @@ y = getaudiodata(recObj);
 audiowrite('test.wav',y,8000);
 
 %set log text to show filename
-set(handles.log_text,'String',strcat('Saved As:','test.wav'));
+set(handles.log_text,'String','Saved as --test.wav--');
