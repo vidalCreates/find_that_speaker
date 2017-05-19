@@ -1,5 +1,4 @@
 function result = removesound(file)
-    fs = 48000;
     %read file
     [Y1,fs] = audioread(file);
     
@@ -21,6 +20,6 @@ function result = removesound(file)
     %Get the filtered samples
      filtered_samples = ifft(fft_values);
      audiowrite('Soundfiltered.wav', filtered_samples, fs);
-     [result,fs]=audioread('Soundfiltered.wav');
+     [result]=audioread('Soundfiltered.wav');
      %sound(y,fs,16);
 end
