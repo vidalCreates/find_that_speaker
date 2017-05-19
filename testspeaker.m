@@ -6,11 +6,11 @@ function resultname = testspeaker
         disp ("Emma : " + max);
     end
   
-%     if (checkKevin < max)
-%         max = checkKevin;
-%         resultname = "Kevin Hart";
-%         disp ("Kevin : " +max);
-%     end
+    if (checkKevin < max)
+        max = checkKevin;
+        resultname = "Kevin Hart";
+        disp ("Kevin : " +max);
+    end
 
     if (checkMorgan < max)
         max = checkMorgan;

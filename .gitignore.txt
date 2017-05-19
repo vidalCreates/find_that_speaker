@@ -1,5 +1,5 @@
-Kevin/
-Obama/
-Ellen/
-Emma/
-Morgan/
+/Kevin
+/Obama
+/Ellen
+/Emma
+/Morgan

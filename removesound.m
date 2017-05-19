@@ -7,7 +7,7 @@ function result = removesound(file)
     
     fft_values = fft(Y1);
     mean_value = mean(abs(fft_values));
-    threshold  = 0.8*mean_value; % Fine-tune this
+    threshold  = 0.1*mean_value; % Fine-tune this
   
     %Remove everything that's below the threshold -we assume that it corresponds to noise
      for i = 1:length(fft_values)
