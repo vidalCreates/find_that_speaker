@@ -1,6 +1,7 @@
 import socket
 import sys
 import time
+import matlab.engine
 from thread import *
 from subprocess import call
 
@@ -53,11 +54,18 @@ def clientthread(conn):
 			file.close() 
 
 			#open matlab and run the main script
-			call(["matlab", "-r", "main"])
+			#call(["matlab", "-r", "main"])
 
-			#wait 20 seconds until speaker is determined
-			time.sleep(20)
+			#wait 18 seconds until speaker is determined
+			#time.sleep(18)
+			
+			print "start matlab engine..."
+			engine = matlab.engine.start_matlab()
+			print "run script..."
+			engine.main(nargout=0)
+			print "sleep 5 seconds..."
 
+			time.sleep(5)
 			#Open file with speaker data
 			f = open('speaker.txt','r')
 
